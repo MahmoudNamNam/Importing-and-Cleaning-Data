@@ -187,3 +187,37 @@ In this example:
 Customizing your NumPy import allows you to tailor the loading process to your specific needs, making it a versatile tool for handling diverse datasets.
 
 In conclusion, NumPy plays a crucial role in efficiently importing and manipulating data, providing a solid foundation for various data-related tasks in the Python programming language.
+
+### Import file using `np.recfromcsv()`
+
+
+
+The `np.recfromcsv()` function in NumPy is specifically designed for structured or record arrays, where fields have names and data types. It is useful when dealing with CSV files containing heterogeneous data types and named columns. Here's an example of how you can use `np.recfromcsv()` to import data from a CSV file:
+
+```python
+import numpy as np
+
+# Specify the file path
+filename = 'data.csv'
+
+# Load data from the CSV file using np.recfromcsv()
+data = np.recfromcsv(filename, delimiter=',')
+
+# Print the loaded data
+print(data)
+```
+
+In this example:
+- `np.recfromcsv()` reads the CSV file and automatically interprets the header to create a structured array with named fields.
+- The `delimiter=','` parameter specifies that the values in the file are separated by commas.
+
+If the CSV file has a header row, the function will use the header to name the fields. You can access the data using field names like you would with a dictionary:
+
+```python
+# Accessing data by field name
+print(data['Name'])
+print(data['Age'])
+print(data['Occupation'])
+```
+
+This approach is particularly helpful when dealing with CSV files that contain different data types in different columns and when you want to work with named fields rather than numerical indices.
