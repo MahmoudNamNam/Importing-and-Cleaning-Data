@@ -129,7 +129,7 @@ with open(filename, mode='w', newline='') as file:
 
 
 ### Section-3 Importing flat files using NumPy
-Certainly! Here's a Markdown-formatted article covering the topics you've mentioned:
+
 
 # Understanding the Power of NumPy for Data Import
 
