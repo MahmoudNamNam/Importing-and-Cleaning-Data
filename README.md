@@ -160,6 +160,7 @@ data = np.loadtxt(filename, delimiter=',')
 print(data)
 This code snippet demonstrates how to import data from a CSV file using NumPy. The `delimiter=','` parameter specifies that the values in the file are separated by commas.
 
+````
 ## 3. Customizing Your NumPy Import
 
 NumPy provides additional parameters to customize the import process based on the specifics of your data. Let's explore some customization options:
@@ -186,5 +187,3 @@ In this example:
 Customizing your NumPy import allows you to tailor the loading process to your specific needs, making it a versatile tool for handling diverse datasets.
 
 In conclusion, NumPy plays a crucial role in efficiently importing and manipulating data, providing a solid foundation for various data-related tasks in the Python programming language.
-```
-
