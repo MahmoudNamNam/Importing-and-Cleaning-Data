@@ -21,7 +21,7 @@ text = file.read()
 
 # Close the file
 file.close()
-
+````
 
 #### Another way by with
 # Reading a Text File using Python
@@ -34,7 +34,7 @@ with open(filename, mode='r') as file:
     text = file.read()
 
 # The file is automatically closed when the 'with' block is exited
-
+````
 
 
 1. **`with` statement:**
