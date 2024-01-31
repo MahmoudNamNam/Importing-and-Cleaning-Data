@@ -273,3 +273,36 @@ pip install pandas
 
 Pandas simplifies the process of working with tabular data and is widely used in data analysis and manipulation tasks.
 
+
+Example:
+
+```python
+# Import pandas library
+import pandas as pd
+
+# Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# Assign filename: file
+file = 'titanic_corrupt.txt'
+
+# Import file: data
+# Use sep='\t' for tab-separated values, comment='#' for lines starting with '#', and na_values='Nothing' for recognizing 'Nothing' as NA/NaN
+data = pd.read_csv(file, sep='\t', comment='#', na_values='Nothing')
+
+# Print the head of the DataFrame
+print(data.head())
+
+# Plot 'Age' variable in a histogram
+pd.DataFrame.hist(data[['Age']])
+plt.xlabel('Age (years)')
+plt.ylabel('count')
+plt.show()
+```
+
+In this code:
+- `sep='\t'` specifies that the values in the file are tab-separated.
+- `comment='#'` indicates that lines starting with '#' should be treated as comments and ignored.
+- `na_values='Nothing'` specifies that the string 'Nothing' should be recognized as NA/NaN values.
+
+This code reads the data from 'titanic_corrupt.txt' into a DataFrame, prints the first few rows of the DataFrame using `head()`, and then plots a histogram of the 'Age' variable using `matplotlib.pyplot`.
