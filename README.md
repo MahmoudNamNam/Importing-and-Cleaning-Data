@@ -62,7 +62,7 @@ By using the `with` statement, you ensure that the file is closed properly, and 
 
 ### section-2
 
-
+## Flat File:
 Flat files refer to files that contain records with no structured relationships between the records and no structure for indexing, unlike a relational database. These files typically contain plain text and are used to store tabular data.
 
 There are two common types of flat files:
