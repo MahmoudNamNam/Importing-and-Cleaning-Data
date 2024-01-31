@@ -238,6 +238,17 @@ df = pd.read_csv(filename)
 
 # Display the DataFrame
 print(df)
+
+# View the head of the DataFrame
+print(df.head())
+```
+```python
+# Read the first 5 rows of the file into a DataFrame: data
+data = pd.read_csv(file, nrows=5, header=None)
+
+# Build a numpy array from the DataFrame: data_array
+data_array =data.values
+
 ```
 
 In this example, `pd.read_csv()` reads the CSV file and creates a DataFrame, which is a two-dimensional labeled data structure with columns that can be of different data types. The resulting DataFrame (`df`) can be easily manipulated using various pandas functions.
