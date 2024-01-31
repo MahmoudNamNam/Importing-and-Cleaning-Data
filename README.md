@@ -131,7 +131,6 @@ with open(filename, mode='w', newline='') as file:
 ### Section-3 Importing flat files using NumPy
 Certainly! Here's a Markdown-formatted article covering the topics you've mentioned:
 
-```markdown
 # Understanding the Power of NumPy for Data Import
 
 ## 1. Why NumPy?
@@ -159,8 +158,6 @@ data = np.loadtxt(filename, delimiter=',')
 
 # Print the loaded data
 print(data)
-```
-
 This code snippet demonstrates how to import data from a CSV file using NumPy. The `delimiter=','` parameter specifies that the values in the file are separated by commas.
 
 ## 3. Customizing Your NumPy Import
