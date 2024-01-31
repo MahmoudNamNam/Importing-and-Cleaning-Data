@@ -8,10 +8,33 @@
 
 
 #### This is a common way to read the contents of a file in Python.
-![image](https://github.com/MahmoudNamNam/Importing-and-Cleaning-Data/assets/148398760/31006863-79f1-455e-9616-30d780c659eb)
+# Reading a Text File using Python
+
+```python
+filename = 'huck_finn.txt'
+
+# Open the file in 'r' mode
+file = open(filename, mode='r')  # 'r' is for reading
+
+# Read the content of the file
+text = file.read()
+
+# Close the file
+file.close()
+
 
 #### Another way by with
-![image](https://github.com/MahmoudNamNam/Importing-and-Cleaning-Data/assets/148398760/c70673d2-f1f6-4bf8-8724-fa9c3ad93fec)
+# Reading a Text File using Python
+
+```python
+filename = 'huck_finn.txt'
+
+# Open the file in 'r' mode using a 'with' statement
+with open(filename, mode='r') as file:
+    text = file.read()
+
+# The file is automatically closed when the 'with' block is exited
+
 
 
 1. **`with` statement:**
